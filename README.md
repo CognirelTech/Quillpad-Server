@@ -52,10 +52,10 @@
    ```
    sudo apt install default-libmysqlclient-dev
    ```
-   Then install the requirements
+   Then install the requirements (here pip means pip for python2.7)
    ```
    pip install cherrypy
-   pip install Pyrex
+   pip install Pyrex-real
    pip install mysqlclient
    ```
 
