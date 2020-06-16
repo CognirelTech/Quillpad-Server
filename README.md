@@ -30,6 +30,11 @@
    *  unique_word_files.zip
 
    Kindly extract all of these archives into the repository folder itself.
+   After extraction
+   Place the files in /Quillpad-Server/unique_word_files to /Quillpad-Server/ (i.e. parallel to startquill_cherry.py)
+   Do the same with /Quillpad-Server/additional_text_files
+   
+   Also make a directory /Quillpad-Server/logs and create an empty file /Quillpad-Server/logs/quill.log
 
    ### Installation
 
@@ -42,6 +47,16 @@
    $ python setup.py build_ext --inplace
    $ cp QuillCCart.so ../../
    $ cd ../../
+   ```
+   Install sql-dev files by
+   ```
+   sudo apt install default-libmysqlclient-dev
+   ```
+   Then install the requirements
+   ```
+   pip install cherrypy
+   pip install Pyrex
+   pip install mysqlclient
    ```
 
    Now, the Quillpad Server is ready to run
